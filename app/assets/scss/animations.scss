@@ -1,0 +1,80 @@
+.anim-pulse {
+  animation: pulse 4s cubic-bezier(.47,1.64,.41,.8) infinite;
+}
+
+.anim-bounce-x {
+  animation: bounce-x .3s ease;
+}
+
+.anim-bounce-scale {
+  animation: bounce-scale .6s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.09);
+  }
+  50% {
+    transform: scale(0.91);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-x {
+  0% {
+    transform: translateX(-10%);
+  }
+  5% {
+    transform: translateX(-10%);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-5%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-3%);
+  }
+  70% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(-1.5%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  95% {
+    transform: translateX(-0.7%);
+  }
+  97% {
+    transform: translateX(0%);
+  }
+  99% {
+    transform: translateX(-0.3%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes bounce-scale {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

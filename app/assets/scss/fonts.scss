@@ -1,0 +1,13 @@
+@mixin font($alias, $name, $weight, $style, $variationSettings:initial) {
+  @font-face {
+    font-family: $alias;
+    src: url("../fonts/" + $name + ".woff2") format("woff2");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    font-variation-settings: $variationSettings;
+  }
+}
+
+@include font($font-default-name, $font-default-name + '-Regular', $font-weight-regular, 'normal');
+

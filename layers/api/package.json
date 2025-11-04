@@ -1,0 +1,24 @@
+{
+  "name": "@special/layer-api",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "dev": "nuxi dev .playground",
+    "build": "nuxt build",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "eslint .",
+    "postinstall": "nuxt prepare .playground",
+    "compile": "graphql-codegen",
+    "watch": "graphql-codegen -w"
+  },
+  "devDependencies": {
+    "nuxt": "4.1.2",
+    "@apollo/client": "^4.0.9",
+    "@graphql-codegen/cli": "6.0.1",
+    "@graphql-codegen/client-preset": "5.1.1",
+    "@graphql-typed-document-node/core": "3.2.0",
+    "rxjs": "^7.8.1"
+  }
+}

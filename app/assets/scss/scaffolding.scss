@@ -1,0 +1,76 @@
+
+.scroll-active {
+  overflow: initial;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  font-family: $font-default !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  font-size: vw(10);
+
+  @include hide-scrollbar;
+
+
+  @include layout-mobile {
+    font-size: mvw(10);
+  }
+
+  *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    vertical-align: baseline;
+  }
+}
+
+body {
+  background: #00071A;
+}
+
+#__nuxt {
+  height: 100%;
+}
+
+// Избежать синих и некрасивых webkit-tap-highlight-color при клике на мобильном устройстве,
+// и сделать изменение opacity при клике
+div, a, button, label {
+  @include layout-mobile {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  }
+
+  &:focus {
+    @include layout-mobile {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+
+img {
+  -webkit-user-drag: none;
+}
+
+a {
+  -webkit-user-drag: none;
+}
+
+*:not(input), *:not(input):before, *:not(input):after {
+  @include layout-not-mobile {
+    user-select: none;
+  }
+}

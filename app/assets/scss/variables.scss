@@ -1,0 +1,24 @@
+/* Responsive Breakpoints */
+$breakpoint-mobile: 729px;
+
+/* Font */
+$font-default-name: 'Roboto';
+
+$font-default: $font-default-name, sans-serif;
+
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+$font-weight-extra-black: 950;
+
+/* Colors */
+$color-brand: #007F32;
+$color-black-40: rgba(0, 0, 0, 0.4);
+
+

@@ -1,0 +1,80 @@
+//fade
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+//slide
+.slide-enter-active, .slide-leave-active {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.slide-enter, .slide-leave-to, .slide-enter-from {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+//slide-fade
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slide-fade-enter, .slide-fade-leave-to, .slide-fade-enter-from {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+
+.slide-tab-next-enter-active,
+.slide-tab-next-leave-active,
+.slide-tab-prev-enter-active,
+.slide-tab-prev-leave-active
+{
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  @include layout-mobile {
+    transition: transform 0.24s ease-in-out, opacity 0.24s ease-in-out;
+  }
+}
+
+.slide-tab-next-enter-from ,
+.slide-tab-prev-leave-to{
+  transform: translateX(100%);
+  opacity: 0;
+}
+.slide-tab-next-leave-to,
+.slide-tab-prev-enter-from  {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+.popup-enter-active,
+.popup-leave-active {
+  transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
+}
+.popup-enter-from,
+.popup-leave-to {
+  opacity: 0;
+  transform: translateY(100%);
+  //filter: blur(1rem);
+}
+
